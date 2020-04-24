@@ -1,0 +1,37 @@
+.Tutorial {
+    composes: overlayBox from "./Overlay.module.css";
+    position: relative;
+    background: rgba(139, 233, 253, 0.5);
+    color: black;
+    max-width: 360px;
+    margin-bottom: 32px;
+}
+
+.Tutorial h2,
+.Tutorial p {
+    margin: 0;
+}
+
+.Tutorial h2 {
+    font-family: "Barlow", sans-serif;
+    margin-bottom: 8px;
+}
+
+.Tutorial button {
+    float: right;
+    cursor: pointer;
+    border-radius: 4px;
+    font: inherit;
+    padding: 4px;
+    background: #8be9fd;
+    border: #282a36 2px solid;
+}
+
+.Tutorial button.left {
+    float: left;
+}
+
+.Tutorial a {
+    font-family: "Barlow", sans-serif;
+    color: #50fa7b;
+}

@@ -1,0 +1,25 @@
+.TabbedOverlay {
+    composes: overlayBox from "./Overlay.module.css";
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.tabs button {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px;
+    flex-grow: 1;
+    border: none;
+    background: none;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.tabs button.focused {
+    background: #6272a4;
+}

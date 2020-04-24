@@ -1,0 +1,46 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 8px;
+}
+
+.overlayBox {
+    background: rgba(40, 42, 54, 0.5);
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(40, 42, 54, 0.3) 1px 2px 4px;
+    margin-bottom: 8px;
+}
+
+.top {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomBar button {
+    cursor: pointer;
+    background: #6272a4;
+    padding: 8px;
+    border: #282a36 4px solid;
+    border-right: none;
+    color: white;
+    font: 20px Barlow;
+}
+
+.bottomBar button:active {
+    background: #282a36;
+}
+
+.bottomBar button.bottomBarLastButton {
+    border-right: #282a36 4px solid;
+}

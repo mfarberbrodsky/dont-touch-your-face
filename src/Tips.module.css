@@ -1,0 +1,45 @@
+.Tips {
+    composes: overlayBox from "./Overlay.module.css";
+    position: relative;
+    background: rgba(241, 250, 140, 0.5);
+    color: black;
+    max-width: 360px;
+}
+
+.Tips h2,
+.Tips p {
+    margin: 0;
+}
+
+.Tips h2 {
+    font-family: "Barlow", sans-serif;
+    margin-bottom: 8px;
+}
+
+.Tips button {
+    float: right;
+    cursor: pointer;
+    border-radius: 4px;
+    font: inherit;
+    padding: 4px;
+    background: #f1fa8c;
+    border: #282a36 2px solid;
+}
+
+.progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: rgba(241, 250, 140, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBarInner {
+    width: 0%;
+    height: inherit;
+    transition: width 1s linear;
+    background: white;
+}

@@ -1,0 +1,23 @@
+.noCamera, .camera {
+  background: black;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font: 36px 'Barlow', sans-serif;
+}
+
+.cameraVideo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.noCamera {
+  cursor: pointer;
+}
